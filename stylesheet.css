@@ -34,7 +34,7 @@ h1
 p
 {
     font-weight: 400;
-    opacity: .5;
+    opacity: .7;
 }
 
 img,
@@ -49,10 +49,11 @@ svg
     color: white;
     background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%)) ;
     border-radius: 2rem;
-    display: grid;
+    
     padding: 1rem;
-    gap: 2rem;
+    
 }
+
 
 .rating-number
 {
@@ -74,9 +75,10 @@ svg
     opacity: 1;
 }
 
-.rating-number::selection
+#rating-page1
 {
-
+    gap: 2rem;
+    display: grid;
 }
 
 input[type="radio"]
@@ -135,19 +137,42 @@ button
 .thankyou-container
 {
     display: none;
+    gap: 2rem;
+    
+    padding: 1rem;
+    text-align: center;
+}
+
+.thankyou-container #dynamic-text
+{
+    color: hsl(25, 97%, 53%);
+    background: hsl(213, 19%, 18%);
+    border-radius: 100vh;
+    padding: .5rem;
+    opacity: 1;
+    margin-inline: auto;
+}
+
+.thankyou-img
+{
+    margin-inline: auto;
 }
 
 @media (min-width: 600px)
 {
-    .rating-container
-    {
-        width: 22.5rem;
-    }
+    
 
-    body
+    
+}
+
+body
     {
         min-height: 100vh;
         display: grid;
         place-items: center;
     }
-}
+
+    .rating-container
+    {
+        width: 22.5rem;
+    }
